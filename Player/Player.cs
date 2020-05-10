@@ -6,21 +6,24 @@ public class Player : KinematicBody2D
     // Declare member variables here. Examples:
     // private int a = 2;
     // private string b = "text";
-    const float acceleration = 900;
+    public const float acceleration = 1000;
 
-    const float friction = 900;
+    public const float friction = 1000;
     private Vector2 velocity = Vector2.Zero;
-    const float maxSpeed = 200;
+    public const float maxSpeed = 200;
 
+    public AnimationPlayer animator;
 
     // Called when the node enters the scene tree for the first time.
     public override void _Ready(){
-        GD.Print("Hello World!");
+        animator = GetNode<AnimationPlayer>("Animation");
+
+        
         
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
-    public override void _Process(float delta){
+    public override void _PhysicsProcess(float delta){
         Vector2 inputDirection = Vector2.Zero;
         Boolean inputMagnitude = false;
         
@@ -37,6 +40,7 @@ public class Player : KinematicBody2D
             velocity = velocity.MoveToward(inputDirection * maxSpeed, acceleration * delta);
         }else{
             velocity = velocity.MoveToward(Vector2.Zero, friction * delta);
+            animator.Play("IdleDown");
         }
         velocity = MoveAndSlide(velocity);
     }
