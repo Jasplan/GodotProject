@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Assets/Green Mage/green_mage.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.cs" type="Script" id=2]
@@ -23,6 +23,19 @@ tracks/0/keys = {
 "values": [ 1, 2, 3, 4, 5, 6, 7, 0 ]
 }
 
+[sub_resource type="AnimationNodeAnimation" id=3]
+animation = "IdleDown"
+
+[sub_resource type="AnimationNodeBlendSpace2D" id=4]
+blend_point_0/node = SubResource( 3 )
+blend_point_0/pos = Vector2( -1, 0 )
+
+[sub_resource type="AnimationNodeStateMachine" id=5]
+states/Idle/node = SubResource( 4 )
+states/Idle/position = Vector2( 427, 106 )
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id=6]
+
 [node name="Player" type="KinematicBody2D"]
 script = ExtResource( 2 )
 __meta__ = {
@@ -42,3 +55,10 @@ shape = SubResource( 1 )
 
 [node name="Animation" type="AnimationPlayer" parent="."]
 anims/IdleDown = SubResource( 2 )
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource( 5 )
+anim_player = NodePath("../Animation")
+active = true
+parameters/playback = SubResource( 6 )
+parameters/Idle/blend_position = Vector2( -0.00156009, 0 )
