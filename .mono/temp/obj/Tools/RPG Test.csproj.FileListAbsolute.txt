@@ -1,0 +1,6 @@
+D:\Programmering\Godot  Projects\RPG Test\.mono\temp\bin\Tools\RPG Test.dll
+D:\Programmering\Godot  Projects\RPG Test\.mono\temp\bin\Tools\RPG Test.pdb
+D:\Programmering\Godot  Projects\RPG Test\.mono\temp\obj\Tools\RPG Test.csprojAssemblyReference.cache
+D:\Programmering\Godot  Projects\RPG Test\.mono\temp\obj\Tools\RPG Test.csproj.CoreCompileInputs.cache
+D:\Programmering\Godot  Projects\RPG Test\.mono\temp\obj\Tools\RPG Test.dll
+D:\Programmering\Godot  Projects\RPG Test\.mono\temp\obj\Tools\RPG Test.pdb
