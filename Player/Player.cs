@@ -8,10 +8,12 @@ public class Player : KinematicBody2D
 
     public const float friction = 1000;
     private Vector2 velocity = Vector2.Zero;
-    public const float maxSpeed = 200;
+    public const float maxSpeed = 150;
 
     public AnimationPlayer animator;
     public AnimationTree animatorTree;
+
+    public AnimationNodeStateMachinePlayback animatorState;
     public Vector2 mousePos = Vector2.Zero;
 
     
@@ -21,10 +23,11 @@ public class Player : KinematicBody2D
     
     // Called when the node enters the scene tree for the first time.
     public override void _Ready(){
+        
         animator = GetNode<AnimationPlayer>("Animation");
         animatorTree = GetNode<AnimationTree>("AnimationTree");
-        
-        
+        animatorState = (AnimationNodeStateMachinePlayback)animatorTree.Get("parameters/playback");
+        animatorTree.Active = true;
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -49,14 +52,18 @@ public class Player : KinematicBody2D
 
         if(inputMagnitude){
             velocity = velocity.MoveToward(inputDirection * maxSpeed, acceleration * delta);
+            animatorTree.Set("parameters/Run/blend_position", mousePos);
             
+            
+            animatorState.Travel("Run");
         }else{
             velocity = velocity.MoveToward(Vector2.Zero, friction * delta);
-            
+            animatorTree.Set("parameters/Idle/blend_position", mousePos);
+            animatorState.Travel("Idle");
         }
         velocity = MoveAndSlide(velocity);
 
-        animatorTree.Set("parameters/Run/blend_position", mousePos);
+        
        
         
         
