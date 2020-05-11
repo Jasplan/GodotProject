@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/grass.png-069ee4cf7805749a27fb012909edc899.stex"
+path="res://.import/staff.png-7b5920d9d90402b9a204d2c8f8207214.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/World/grass.png"
-dest_files=[ "res://.import/grass.png-069ee4cf7805749a27fb012909edc899.stex" ]
+source_file="res://Assets/Weapons/staff.png"
+dest_files=[ "res://.import/staff.png-7b5920d9d90402b9a204d2c8f8207214.stex" ]
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
-flags/repeat=1
+flags/repeat=0
 flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false

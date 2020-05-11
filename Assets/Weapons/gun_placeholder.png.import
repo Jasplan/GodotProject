@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gun_placeholder.png-fa402057f421ce58334d266b76365a58.stex"
+path="res://.import/gun_placeholder.png-23be4fb3bc56ddf07f981470fa79a5d2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Green Mage/Weapons/gun_placeholder.png"
-dest_files=[ "res://.import/gun_placeholder.png-fa402057f421ce58334d266b76365a58.stex" ]
+source_file="res://Assets/Weapons/gun_placeholder.png"
+dest_files=[ "res://.import/gun_placeholder.png-23be4fb3bc56ddf07f981470fa79a5d2.stex" ]
 
 [params]
 

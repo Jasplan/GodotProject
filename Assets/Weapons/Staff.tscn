@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/Weapons/staff.png" type="Texture" id=1]
+
+[node name="Staff" type="Area2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -4.76837e-07, 0 )
+texture = ExtResource( 1 )
