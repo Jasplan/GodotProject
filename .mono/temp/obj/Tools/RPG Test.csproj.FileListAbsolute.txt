@@ -4,3 +4,9 @@ D:\Programmering\Godot  Projects\RPG Test\.mono\temp\obj\Tools\RPG Test.csprojAs
 D:\Programmering\Godot  Projects\RPG Test\.mono\temp\obj\Tools\RPG Test.csproj.CoreCompileInputs.cache
 D:\Programmering\Godot  Projects\RPG Test\.mono\temp\obj\Tools\RPG Test.dll
 D:\Programmering\Godot  Projects\RPG Test\.mono\temp\obj\Tools\RPG Test.pdb
+C:\Users\Just an annoying cat\Desktop\Mage Game\.mono\temp\bin\Tools\RPG Test.dll
+C:\Users\Just an annoying cat\Desktop\Mage Game\.mono\temp\bin\Tools\RPG Test.pdb
+C:\Users\Just an annoying cat\Desktop\Mage Game\.mono\temp\obj\Tools\RPG Test.csprojAssemblyReference.cache
+C:\Users\Just an annoying cat\Desktop\Mage Game\.mono\temp\obj\Tools\RPG Test.csproj.CoreCompileInputs.cache
+C:\Users\Just an annoying cat\Desktop\Mage Game\.mono\temp\obj\Tools\RPG Test.dll
+C:\Users\Just an annoying cat\Desktop\Mage Game\.mono\temp\obj\Tools\RPG Test.pdb
