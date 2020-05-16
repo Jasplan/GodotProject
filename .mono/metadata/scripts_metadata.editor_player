@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-{"res://Assets/Enemies/Slime/Slime.cs":{"modified_time":"1589231948","class":{"namespace":"","class_name":"Slime","nested":false}},"res://Assets/Weapons/Staff.cs":{"modified_time":"1589231411","class":{"namespace":"","class_name":"Staff","nested":false}},"res://Player/Player.cs":{"modified_time":"1589659912","class":{"namespace":"","class_name":"Player","nested":false}}}
-=======
-{"res://Assets/Enemies/Slime/Slime.cs":{"modified_time":"1589233381","class":{"namespace":"","class_name":"Slime","nested":false}},"res://Assets/Weapons/Staff.cs":{"modified_time":"1589233381","class":{"namespace":"","class_name":"Staff","nested":false}},"res://Player/Player.cs":{"modified_time":"1589197475","class":{"namespace":"","class_name":"Player","nested":false}}}
->>>>>>> c502f9545b2ea32157674678080e0915b1c59a55
+{"res://Assets/Enemies/Slime/Slime.cs":{"modified_time":"1589231948","class":{"namespace":"","class_name":"Slime","nested":false}},"res://Assets/Weapons/Staff.cs":{"modified_time":"1589662337","class":{"namespace":"","class_name":"Staff","nested":false}},"res://Player/Player.cs":{"modified_time":"1589660136","class":{"namespace":"","class_name":"Player","nested":false}}}

@@ -204,7 +204,7 @@ __meta__ = {
 position = Vector2( 0, -16 )
 texture = ExtResource( 1 )
 hframes = 32
-frame = 1
+frame = 10
 
 [node name="Hitbox" type="CollisionShape2D" parent="."]
 position = Vector2( 0, -8 )
