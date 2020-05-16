@@ -39,7 +39,7 @@ public class Player : KinematicBody2D
 
         
 
-
+        //Movement
 
         inputDirection.x = Input.GetActionStrength("ui_right") - Input.GetActionStrength("ui_left");
         inputDirection.y = Input.GetActionStrength("ui_down") - Input.GetActionStrength("ui_up");
@@ -64,8 +64,8 @@ public class Player : KinematicBody2D
         velocity = MoveAndSlide(velocity);
 
         
-       
-        
+       //Attack animations
+           
         
     }
 }
